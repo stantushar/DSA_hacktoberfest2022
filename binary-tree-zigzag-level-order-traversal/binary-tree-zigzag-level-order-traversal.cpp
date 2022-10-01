@@ -58,18 +58,8 @@ vector<vector<int>> zigzagLevelOrder(TreeNode *root,vector<vector<int>> &res) {
     return res;
 };
 
-int main() {
-    //Below is a Binary Tree.
-    TreeNode* root=new TreeNode(3);
-    root->left=new TreeNode(9);
-    root->right=new TreeNode(20);
-    root->right->left=new TreeNode(15);
-    root->right->right=new TreeNode(7);
-    //Resultant Array
-    vector<vector<int>> result;
-    zigzagLevelOrder(root,result);
-
-    //Displaying result
+//Displaying result
+void printResult(vector<vector<int>> result) {
     cout<<"[";
     for(int i=0;i<result.size();i++) {
         
@@ -88,5 +78,20 @@ int main() {
         }
     }
     cout<<"]"<<endl;
+}
+
+int main() {
+    //Below is a Binary Tree.
+    TreeNode* root=new TreeNode(3);
+    root->left=new TreeNode(9);
+    root->right=new TreeNode(20);
+    root->right->left=new TreeNode(15);
+    root->right->right=new TreeNode(7);
+    //Resultant Array
+    vector<vector<int>> result;
+    zigzagLevelOrder(root,result);
+
+    //Displaying result
+    printResult(result);
     return 0;
 }
