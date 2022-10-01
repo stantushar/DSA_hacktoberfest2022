@@ -3,8 +3,9 @@ using namespace std;
 // Definition for a n-ary tree node.
 
 /**
- * Could have used Left-Child Right-Sibling Representation of Tree , but it's the basic representation.
+ * Could have used Left-Child Right-Sibling Representation of Tree , but I did the basic representation.
  * Go ahead and study about Left-Child Right-Sibling Representation of Tree on GFG, its very intresting.
+ * I will probably add it later.
  * */
 
 class TreeNode {
